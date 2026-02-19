@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+.env*
+
+# Expo/React Native
+.expo/
+.expo-shared/
+
+# Next.js
+.next/
+dist/
+build/
+coverage/
+*.log
+.DS_Store
+
+# Android build
+android/build/
+
+# iOS build
+ios/build/
