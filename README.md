@@ -1,21 +1,31 @@
-# Media Logging App
+# CursorTest
 
-## Overview
-This application will allow users to log their media consumption across multiple platforms (web and mobile). Users can log movies, books, and games, providing a rating from 1 to 10 for each entry.
+This is a monorepo application using Expo with Supabase backend.
 
-## MVP Scope
-- User authentication
-- Media entry form for logging movies, books, and games
-- Ability to rate entries from 1 to 10
-- Simple dashboard displaying logged media
+## Setup
+1. Clone the repository.
+2. Install dependencies using `npm install` or `yarn`.
+3. Create a `.env` file based on `.env.example`.
 
-## Planned Features
-- Filter and sort media by type and rating
-- Wishlist functionality to track desired media
-- Integration with social media for sharing logs
-- User profiles with detailed statistics and insights on logged media
+## Supabase Configuration
+- Set up a Supabase project.
+- Add your Supabase URL and Anon Key to the `.env` file:
+  - `SUPABASE_URL=your_supabase_url`
+  - `SUPABASE_ANON_KEY=your_anon_key`
 
-## High-Level Architecture
-- **Frontend**: Built using React for web and React Native for mobile, ensuring consistency across platforms.
-- **Backend**: RESTful API developed in Node.js, connected to a MongoDB database for storage.
-- **Authentication**: Utilization of JWT for secure authentication across platforms.
+## Running the App
+- Use the following scripts to run the app:
+  - `npm start` for Expo Go
+  - `npm run build` for production build
+
+## Folder Structure
+```
+/CursorTest
+  ├── /apps
+  │   ├── /mobile
+  │   └── /web
+  ├── /packages
+  │   ├── /common
+  ├── package.json
+  └── README.md
+```
